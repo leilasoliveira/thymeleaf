@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+
+        <th:block layout:fragment="content">
+
+            <h1>New Path</h1>
+            <p th:text="${name}"></p>
+
+            <ul>
+                <li th:each="name: ${lista}">
+                    <p th:text="${name}"></p>
+                </li>
+            </ul>
+
+        </th:block>
+
+</html>
